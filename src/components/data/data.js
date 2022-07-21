@@ -30,22 +30,22 @@ const data = [
       { icon: AttachMoney, name: "Transactions" },
       { icon: BarChart, name: "Reports" },
     ],
-    
   },
-  { title: "Notifications",
+  {
+    title: "Notifications",
     item: [
-      { icon: MailOutline , name: "Mail" },
-      { icon: DynamicFeed , name: "Feedback" },
-      { icon: ChatBubbleOutline , name: "Messages" },
+      { icon: MailOutline, name: "Mail" },
+      { icon: DynamicFeed, name: "Feedback" },
+      { icon: ChatBubbleOutline, name: "Messages" },
     ],
   },
-  { title: "Staff",
+  {
+    title: "Staff",
     item: [
-      { icon: WorkOutline  , name: "Manage" },
-      { icon: Timeline  , name: "Analytics" },
-      { icon: Report  , name: "Reports" },
+      { icon: WorkOutline, name: "Manage" },
+      { icon: Timeline, name: "Analytics" },
+      { icon: Report, name: "Reports" },
     ],
-   
   },
 ];
 
