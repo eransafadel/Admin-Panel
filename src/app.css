@@ -3,6 +3,7 @@
 }
 
 .others{
-    flex:1;
+    margin-top: 40px;
+    flex:4;
     background-color:darkcyan;
 }

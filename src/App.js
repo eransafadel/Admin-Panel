@@ -1,6 +1,6 @@
 import React from "react";
 import Topbar from './components/topbar/Topbar';
-import Sidebar from "./components/sidebar/Sidebar";
+import MySidebar from "./components/sidebar/MySidebar";
 import "./app.css";
 
 
@@ -9,7 +9,7 @@ function App() {
     <div>
     <Topbar/>
     <div className="container">
-      <Sidebar/>
+      <MySidebar/>
       <div className="others">
       other pages
       </div>
