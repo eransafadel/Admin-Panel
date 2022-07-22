@@ -8,9 +8,7 @@ const Home = () => {
   return (
     <div className="home">
         <FeaturedInfo/>
-        <MyChart 
-        //  title="User Analytics" data={userData} dataKey="Active User" grid={true}
-         />
+        <MyChart title="User Analytics" data={userData} dataKey="Active User" grid={true}/>
     </div>
   )
 }

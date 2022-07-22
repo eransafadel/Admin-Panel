@@ -12,6 +12,8 @@ import {
     { title, data, dataKey, grid }
     )=> {
 
+      const elem = "!";
+
   return (
     <div className="chart">
       <h3 className="chartTitle">{title}</h3>
