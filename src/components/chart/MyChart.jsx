@@ -1,20 +1,20 @@
-import "./chart.css";
-// import {
-//   LineChart,
-//   Line,
-//   XAxis,
-//   CartesianGrid,
-//   Tooltip,
-//   ResponsiveContainer,
-// } from "recharts";
+import "./myChart.css";
+import {
+  LineChart,
+  Line,
+  XAxis,
+  CartesianGrid,
+  Tooltip,
+  ResponsiveContainer,
+} from "recharts";
 
- const Chart = (
+ const MyChart = (
     { title, data, dataKey, grid }
     )=> {
 
   return (
     <div className="chart">
-      {/* <h3 className="chartTitle">{title}</h3>
+      <h3 className="chartTitle">{title}</h3>
       <ResponsiveContainer width="100%" aspect={4 / 1}>
         <LineChart data={data}>
           <XAxis dataKey="name" stroke="#5550bd" />
@@ -22,8 +22,8 @@ import "./chart.css";
           <Tooltip />
           {grid && <CartesianGrid stroke="#e0dfdf" strokeDasharray="5 5" />}
         </LineChart>
-      </ResponsiveContainer> */}
+      </ResponsiveContainer>
     </div>
   );
 }
-export default Chart;
+export default MyChart;

@@ -1,12 +1,12 @@
 import React from "react";
 import "./sidebarBuilder.css";
 
-const SidebarBuilder = ({ Item, title }) => {
+const SidebarBuilder = ({ item, title }) => {
   return (
     <div className="sidebarMenu">
       <h3 className="sidebarTitle">{title}</h3>
       <ul className="sidebarList">
-        {Item.map((n, index) => {
+        {item.map((n, index) => {
           const Icon = n.icon;
           const name = n.name;
 

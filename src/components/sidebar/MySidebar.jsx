@@ -8,7 +8,7 @@ const MySidebar = () => {
     <div className="sidebar">
       <div className="sidebarWrapper">
         {items.map((n, index) => (
-          <SidebarBuilder key={index} Item={n.item} title={n.title} />
+          <SidebarBuilder key={index} item={n.item} title={n.title} />
         ))}
       </div>
     </div>
