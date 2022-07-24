@@ -4,7 +4,7 @@ import { Visibility } from "@material-ui/icons";
 import data from "./data/data";
 const WidgetSm = () => {
   const items = data.map((n, index) => (
-    <li className="widgetSmListTitle">
+    <li key={index} className="widgetSmListTitle">
       <img src={n.image} alt="avatar" className="widgetSmImg" />
       <div className="widgetSmUser">
         <span className="widgetSmUsername">{n.username}</span>
