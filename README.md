@@ -1,6 +1,6 @@
 # FrontendEnd  - Admin Panel By Eran Safadel
 
-![Design preview for the Order summary card coding challenge](./design/desktop-preview.jpg)
+![Design preview for the Admin Panel](./public/images/design/desktop-preview.jpg)
 
 ## Welcome! 👋
 
@@ -16,7 +16,7 @@ React admin dashboard with Material UI, chart, and CSS from scratch.
 
 
 ## Deploying project:
-https://eran-safadel-responsive-order-summery-card.netlify.app/
+https://eran-safadel-admin-panel.netlify.app/
 
 
 **Have fun!** 🚀
