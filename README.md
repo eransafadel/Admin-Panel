@@ -1,8 +1,10 @@
 # FrontendEnd  - Admin Panel By Eran Safadel
 
-![Design preview for the Admin Panel](./images/Home.jpg)
+![Admin Panel Home](./images/Home.jpg)
+
 
 ## Welcome! 👋
+![Admin Panel Members](./images/Members.jpg)
 
 
 **React |React Router | React Chart| MUI| JS ES6 |  CSS**
