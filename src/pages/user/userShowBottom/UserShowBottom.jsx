@@ -1,6 +1,6 @@
 import React from 'react';
 import { CalendarToday, MailOutline, PhoneAndroid,PermIdentity,LocationSearching } from "@material-ui/icons";
-import data from "../data/data";
+import data from "../../data/data";
 import "./userShowBottom.css";
 
 const UserShowBottom = () => {

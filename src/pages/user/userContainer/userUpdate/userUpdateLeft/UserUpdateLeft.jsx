@@ -1,5 +1,5 @@
 import React from 'react';
-import data from "../../../data/data";
+import data from "../../../../data/data";
 import UserUpdateItem from '../userUpdateItem/UserUpdateItem';
 
 const UserUpdateLeft = () => {
