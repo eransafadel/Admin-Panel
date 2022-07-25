@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./sidebarBuilder.css";
 
 const SidebarBuilder = ({ item, title }) => {
@@ -9,8 +10,21 @@ const SidebarBuilder = ({ item, title }) => {
         {item.map((n, index) => {
           const Icon = n.icon;
           const name = n.name;
-
-          return (
+          // const item = (
+          //   <li key={index} className="sidebarListItem">
+          //     <Icon />
+          //     {name}
+          //   </li>
+          // );
+          
+          return n.link ? (
+            <Link to={n.link} className="link">
+              <li key={index} className="sidebarListItem">
+                <Icon />
+                {name}
+              </li>
+            </Link>
+          ) : (
             <li key={index} className="sidebarListItem">
               <Icon />
               {name}

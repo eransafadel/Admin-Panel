@@ -17,7 +17,7 @@ const data = [
   {
     title: "Home",
     item: [
-      { icon: LineStyle, name: "Home" },
+      { icon: LineStyle, name: "Home",link:"/" },
       { icon: Timeline, name: "Analytics" },
       { icon: TrendingUp, name: "Sales" },
     ],
@@ -25,8 +25,8 @@ const data = [
   {
     title: "Quick Menu",
     item: [
-      { icon: PermIdentity, name: "Users" },
-      { icon: Storefront, name: "Products" },
+      { icon: PermIdentity, name: "Users",link:"/users" },
+      { icon: Storefront, name: "Products",link:"/products" },
       { icon: AttachMoney, name: "Transactions" },
       { icon: BarChart, name: "Reports" },
     ],
