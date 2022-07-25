@@ -1,7 +1,7 @@
 # FrontendEnd  - Admin Panel By Eran Safadel
 
-![Design preview for the Admin Panel](./images/Home.jpg)
-![Design preview for the Admin Panel](./images/Members.jpg)
+![Admin Panel Home](./images/Home.jpg)
+![Admin Panel Members](./images/Members.jpg)
 
 ## Welcome! 👋
 
