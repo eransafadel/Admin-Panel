@@ -1,7 +1,7 @@
 import React from 'react';
 import { Publish } from '@material-ui/icons';
 import "./userUpdateRight.css";
-import data from "../../../../data/data";
+import {data} from "../../../../data/data";
 
 const UserUpdateRight = () => {
   return (

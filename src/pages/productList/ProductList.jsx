@@ -1,7 +1,7 @@
 import "./productList.css";
 import { DataGrid } from "@material-ui/data-grid";
 import { DeleteOutline } from "@material-ui/icons";
-import  productRows from "./data/productRows";
+import  {productRows} from "../data/data";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
@@ -45,9 +45,9 @@ const ProductList=() =>{
       renderCell: (params) => {
         return (
           <>
-            {/* <Link to={"/product/" + params.row.id}> */}
+            <Link to={"/product/" + params.row.id}>
               <button className="productListEdit">Edit</button>
-            {/* </Link> */}
+            </Link>
             <DeleteOutline
               className="productListDelete"
               onClick={() => handleDelete(params.row.id)}

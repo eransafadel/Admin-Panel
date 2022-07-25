@@ -1,7 +1,7 @@
 import React from 'react';
 import "./newUser.css";
 import NewUserItem from './newUserItem/NewUserItem';
-import data from "../data/data";
+import {data} from "../data/data";
 
 
 const NewUser = () => {
