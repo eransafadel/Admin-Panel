@@ -1,4 +1,29 @@
-export  const data = {
+
+export interface FullyDataUserInfo {
+  fullname:string;
+  job:string;
+  dob:string;
+  username:string;
+  phone:string;
+  mail:string;
+  location:string;
+  image:string;
+} 
+
+export interface productRowsInfo {
+  id:number;
+  name:string;
+  img:string;
+  stock:number;
+  status:string;
+  price:string;
+ 
+}
+
+
+
+
+export const dataInfo:FullyDataUserInfo = {
   fullname: "Eran Safadel",
   job: "Programmer",
   dob: "21/01/1993",
@@ -10,7 +35,7 @@ export  const data = {
     "https://media-exp1.licdn.com/dms/image/C5603AQEUjmnD7Lggvw/profile-displayphoto-shrink_800_800/0/1602768957092?e=1664409600&v=beta&t=IrRlvS7KCa2n6IvxpELyNPdfvuDZbGYhH75mAbsdDaM",
 };
 
-export const productRows = [
+export const productRows:productRowsInfo[] = [
   {
     id: 1,
     name: "Apple MacBook Pro 13",

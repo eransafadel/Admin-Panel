@@ -1,7 +1,7 @@
 import React from 'react';
 import "./newUser.css";
 import NewUserItem from './newUserItem/NewUserItem';
-import {data} from "../data/data";
+import {dataInfo} from "../data/data";
 
 
 const NewUser = () => {
@@ -11,12 +11,12 @@ const NewUser = () => {
           <form className="newUserForm">
           
 
-            <NewUserItem title="Username" type="text" value={data.username} />
-            <NewUserItem title="Full Name" type="text" value={data.fullname} />
-            <NewUserItem title="Email" type="email" value={data.mail} />
+            <NewUserItem title="Username" type="text" value={dataInfo.username} />
+            <NewUserItem title="Full Name" type="text" value={dataInfo.fullname} />
+            <NewUserItem title="Email" type="email" value={dataInfo.mail} />
             <NewUserItem title="Password" type="password" value={"password"} />
-            <NewUserItem title="Phone" type="text" value={data.phone} />
-            <NewUserItem title="Address" type="text" value={data.location} />
+            <NewUserItem title="Phone" type="text" value={dataInfo.phone} />
+            <NewUserItem title="Address" type="text" value={dataInfo.location} />
            
             <div className="newUserItem">
               <label>Gender</label>

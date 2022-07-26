@@ -1,4 +1,11 @@
-export const userData = [
+export interface userDataInfo {
+  name:string;
+  "Active User":number;
+}
+
+
+
+export const userData:userDataInfo[] = [
     {
       name: "Jan",
       "Active User": 4000,

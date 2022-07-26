@@ -1,7 +1,8 @@
 import React from "react";
 import "./FeaturedInfoBuilder.css";
+import {FeaturedData} from "./data/data";
 
-const FeaturedInfoBuilder = ({ item }) => {
+const FeaturedInfoBuilder:React.FC<{item:FeaturedData}> = ({ item }) => {
   const { featuredTitle, featuredMoney, featuredMoneyRate, Icon, featuredSub } =
     item;
   return (

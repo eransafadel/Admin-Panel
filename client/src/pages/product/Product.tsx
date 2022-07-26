@@ -1,15 +1,19 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import "./product.css";
-import Chart from "../../components/chart/MyChart";
+import MyChart from "../../components/chart/MyChart";
 import {productData} from "./data/data";
-import {productRows} from "../data/data";
+import {productRows,productRowsInfo} from "../data/data";
 import { Publish } from "@material-ui/icons";
 
 const Product = () => {
 
-    const index = window.location.href.split("/").pop();
-    const item = productRows[index-1];
+    const index:string| undefined = window.location.href.split("/").pop();
+   
+    const indexNum: number = Number(index);
+
+
+    const item:productRowsInfo = productRows[indexNum-1];
 
   
     return (
@@ -22,7 +26,7 @@ const Product = () => {
           </div>
           <div className="productTop">
               <div className="productTopLeft">
-                  <Chart data={productData} dataKey="Sales" title="Sales Performance"/>
+                  <MyChart data={productData} dataKey="Sales" title="Sales Performance" grid={false}/>
               </div>
               <div className="productTopRight">
                   <div className="productInfoTop">

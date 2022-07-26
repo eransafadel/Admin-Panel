@@ -1,14 +1,14 @@
 import "./productList.css";
 import { DataGrid } from "@material-ui/data-grid";
 import { DeleteOutline } from "@material-ui/icons";
-import  {productRows} from "../data/data";
+import  {productRows,productRowsInfo} from "../data/data";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import React,{ useState } from "react";
 
 const ProductList=() =>{
-  const [data, setData] = useState(productRows);
+  const [data, setData] = useState<productRowsInfo[]>(productRows);
 
-  const handleDelete = (id) => {
+  const handleDelete = (id:number) => {
     setData(data.filter((item) => item.id !== id));
   };
 
@@ -18,7 +18,7 @@ const ProductList=() =>{
       field: "product",
       headerName: "Product",
       width: 200,
-      renderCell: (params) => {
+      renderCell: (params:any) => {
         return (
           <div className="productListItem">
             <img className="productListImg" src={params.row.img} alt="" />
@@ -42,7 +42,7 @@ const ProductList=() =>{
       field: "action",
       headerName: "Action",
       width: 150,
-      renderCell: (params) => {
+      renderCell: (params:any) => {
         return (
           <>
             <Link to={"/product/" + params.row.id}>

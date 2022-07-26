@@ -1,4 +1,5 @@
 import "./myChart.css";
+import React from "react";
 import {
   LineChart,
   Line,
@@ -8,7 +9,12 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
-const MyChart = ({ title, data, dataKey, grid }) => {
+import {userDataInfo} from "../../data/dummyData";
+import {productDataInfo} from "../../pages/product/data/data";
+
+
+
+const MyChart:React.FC<{title:string,data:userDataInfo[]|productDataInfo[],dataKey:string,grid:boolean| undefined}> = ({ title, data, dataKey, grid }) => {
   return (
     <div className="chart">
       <h3 className="chartTitle">{title}</h3>

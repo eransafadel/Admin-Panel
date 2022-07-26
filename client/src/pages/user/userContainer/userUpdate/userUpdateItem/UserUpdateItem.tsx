@@ -1,7 +1,7 @@
 import React from 'react';
 import "./userUpdateItem.css";
 
-const UserUpdateItem = ({title,value}) => {
+const UserUpdateItem:React.FC<{title:string,value:string}> = ({title,value}) => {
   return (
     <div className="userUpdateItem">
     <label>{title}</label>

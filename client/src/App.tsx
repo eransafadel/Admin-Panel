@@ -14,11 +14,11 @@ import NewProduct from "./pages/newProduct/NewProduct";
 function App() {
   return (
     <Router>
-      <Topbar />
+      <Topbar/>
       <div className="container">
         <MySidebar />
         <Routes>
-          <Route exact path="/" element={<Home />} />
+          <Route  path="/" element={<Home />} />
           <Route path="/users" element={<UserList />} />
           <Route path="/user/:userId" element={<User />} />
           <Route path="/newUser" element={<NewUser />} />

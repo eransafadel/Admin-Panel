@@ -1,7 +1,7 @@
 import React from 'react';
 import { Publish } from '@material-ui/icons';
 import "./userUpdateRight.css";
-import {data} from "../../../../data/data";
+import {dataInfo} from "../../../../data/data";
 
 const UserUpdateRight = () => {
   return (
@@ -9,7 +9,7 @@ const UserUpdateRight = () => {
               <div className="userUpdateUpload">
                 <img
                   className="userUpdateImg"
-                  src={data.image}
+                  src={dataInfo.image}
                   alt=""
                 />
                 <label htmlFor="file">

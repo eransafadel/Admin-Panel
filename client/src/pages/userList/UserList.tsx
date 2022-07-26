@@ -3,11 +3,11 @@ import "./userList.css";
 import { DataGrid } from "@material-ui/data-grid";
 import { DeleteOutline } from "@material-ui/icons";
 import { Link } from "react-router-dom";
-import rows from "./data/data";
+import {rows,DataGridRows} from "./data/data";
 
 const UserList = () => {
-  const [data, setData] = useState(rows);
-  const handleDelete= (id)=>{
+  const [data, setData] = useState <DataGridRows[]> (rows);
+  const handleDelete= (id:number)=>{
     setData(data.filter((item)=> item.id!==id ));
   }
   const cols = [
@@ -16,7 +16,7 @@ const UserList = () => {
       field: "username",
       headerName: "Name",
       width: 200,
-      renderCell: (params) => {
+      renderCell: (params:any) => {
         return (
           <div className="userListUser">
             <img className="userListImg" src={params.row.avatar} alt="" />
@@ -37,7 +37,7 @@ const UserList = () => {
       field: "action",
       headerName: "Action",
       width: 150,
-      renderCell: (params) => {
+      renderCell: (params:any) => {
         return (
           <>
             <Link to={"/user/" + params.row.id}>
@@ -56,7 +56,7 @@ const UserList = () => {
       <DataGrid
         rows={data}
         columns={cols}
-        disdisableSelectionOnClick={true}
+        // disdisableSelectionOnClick={disableSelectionOnClickOptions}
         pageSize={5}
         checkboxSelection
       />

@@ -1,6 +1,16 @@
 import { ArrowDownward, ArrowUpward } from "@material-ui/icons";
 
-const data = [
+export interface FeaturedData{
+  featuredTitle:string;
+  featuredMoney:string;
+  featuredMoneyRate:number;
+  Icon:any;
+  featuredSub:string;
+
+}
+
+
+export const items:FeaturedData[] = [
   {
     featuredTitle: "Revenue",
     featuredMoney: "$2,415",
@@ -24,4 +34,4 @@ const data = [
   },
 ];
 
-export default data;
+

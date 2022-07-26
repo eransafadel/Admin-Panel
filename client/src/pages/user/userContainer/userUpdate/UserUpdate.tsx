@@ -1,5 +1,4 @@
 import React from 'react';
-import data from "../../../data/data";
 import UserUpdateItem from "./userUpdateItem/UserUpdateItem";
 import "./userUpdate.css";
 import UserUpdateRight from './userUpdateRight/UserUpdateRight';

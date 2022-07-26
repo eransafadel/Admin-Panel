@@ -1,4 +1,14 @@
-const rows = [
+export interface DataGridRows {
+  id:number;
+  username:string;
+  avatar:string;
+  email:string;
+  status:string;
+  transaction:number;
+}
+
+
+export const rows:DataGridRows[] = [
   {
     id: 1,
     username: "Jon Snow",
@@ -46,4 +56,4 @@ const rows = [
   },
 ];
 
-export default rows;
+

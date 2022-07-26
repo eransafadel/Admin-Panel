@@ -11,12 +11,7 @@ const SidebarBuilder: React.FC<{item:Item[],title:string}> = ({ item, title }) =
         {item.map((n, index) => {
           const Icon = n.icon;
           const name = n.name;
-          // const item = (
-          //   <li key={index} className="sidebarListItem">
-          //     <Icon />
-          //     {name}
-          //   </li>
-          // );
+        
           
           return n.link ? (
             <Link to={n.link} className="link">
