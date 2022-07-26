@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./sidebarBuilder.css";
+import {Item} from "./data/data"
 
-const SidebarBuilder = ({ item, title }) => {
+const SidebarBuilder: React.FC<{item:Item[],title:string}> = ({ item, title }) => {
   return (
     <div className="sidebarMenu">
       <h3 className="sidebarTitle">{title}</h3>

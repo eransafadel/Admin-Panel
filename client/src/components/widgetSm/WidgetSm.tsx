@@ -1,9 +1,12 @@
 import React from "react";
 import "./widgetSm.css";
 import { Visibility } from "@material-ui/icons";
-import data from "./data/data";
+import {data,BasicMemberUserInfo} from "./data/data";
+
+
+
 const WidgetSm = () => {
-  const items = data.map((n, index) => (
+  const items = data.map((n:BasicMemberUserInfo, index:number) => (
     <li key={index} className="widgetSmListTitle">
       <img src={n.image} alt="avatar" className="widgetSmImg" />
       <div className="widgetSmUser">

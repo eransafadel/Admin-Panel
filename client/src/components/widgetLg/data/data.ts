@@ -1,4 +1,19 @@
-const data = [
+
+
+export interface CostumerDataInfo {
+
+  username: string;
+  date: string;
+  amount:string,
+  status:string,
+  image:string
+
+}
+
+
+
+
+export const data:CostumerDataInfo[] = [
   {
     username: "Valeria Boltneva",
     date: "24/07/2022",
@@ -34,4 +49,4 @@ const data = [
   },
 ];
 
-export default data;
+

@@ -1,12 +1,13 @@
 import "./widgetLg.css";
-import data from "./data/data";
+import {data,CostumerDataInfo} from "./data/data";
+import React from "react";
 
 const WidgetLg = () => {
-  const Button = ({ type }) => {
+  const Button: React.FC<{type:string}>=({type}) => {
     return <button className={"widgetLgButton " + type}>{type}</button>;
   };
-
-  const items = data.map((n, index) => (
+  
+  const items = data.map((n:CostumerDataInfo, index:number) => (
     <tr key={index} className="widgetLgTr">
       <td className="widgetLgUser">
         <img src={n.image} alt="avatar image" className="widgetLgImg" />

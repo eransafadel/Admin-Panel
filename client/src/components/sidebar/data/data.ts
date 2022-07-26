@@ -13,7 +13,20 @@ import {
   Report,
 } from "@material-ui/icons";
 
-const data = [
+export interface Item  {
+  icon:any;
+  name:string;
+  link?:string;
+}
+
+
+export interface SideBarData  {
+  title: string;
+  item: Item[];
+  
+}
+
+export const items:SideBarData[] = [
   {
     title: "Home",
     item: [
@@ -49,4 +62,4 @@ const data = [
   },
 ];
 
-export default data;
+

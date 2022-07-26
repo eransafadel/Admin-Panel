@@ -1,5 +1,14 @@
 
-const data = [
+export interface BasicMemberUserInfo {
+  username: string;
+  job: string;
+  image:string
+
+}
+
+
+
+export const data:BasicMemberUserInfo[] = [
   {
     username: "Laure Refali",
     job: "Musician",
@@ -33,4 +42,3 @@ const data = [
 
 ];
 
-export default data;
