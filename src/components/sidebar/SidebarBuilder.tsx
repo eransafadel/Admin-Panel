@@ -5,7 +5,7 @@ import {Item} from "./data/data"
 
 const SidebarBuilder: React.FC<{item:Item[],title:string}> = ({ item, title }) => {
   return (
-    <div className="sidebarMenu">
+    <div className="sidebarMenu" >
       <h3 className="sidebarTitle">{title}</h3>
       <ul className="sidebarList">
         {item.map((n, index) => {

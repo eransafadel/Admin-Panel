@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL:string= "http://localhost:5000/api/";
+const BASE_URL:string= "https://eransa-e-commerce.herokuapp.com/api/";
 const item:any = localStorage.getItem("persist:root");
 const TOKEN:string = JSON.parse(JSON.parse(item).user).currentUser.accessToken;
 console.log(TOKEN);
