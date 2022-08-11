@@ -3,7 +3,7 @@
 export interface CostumerDataInfo {
 
   username: string;
-  date: string;
+  createdAt: string;
   amount:string,
   status:string,
   image:string
@@ -16,7 +16,7 @@ export interface CostumerDataInfo {
 export const data:CostumerDataInfo[] = [
   {
     username: "Valeria Boltneva",
-    date: "24/07/2022",
+    createdAt: "24/07/2022",
     amount: "$743.55",
     status: "Approved",
     image:
@@ -25,7 +25,7 @@ export const data:CostumerDataInfo[] = [
 
   {
     username: "Clara Krivitskiy",
-    date: "22/07/2022",
+    createdAt: "22/07/2022",
     amount: "$600",
     status: "Declined",
     image:
@@ -33,7 +33,7 @@ export const data:CostumerDataInfo[] = [
   },
   {
     username: "Maya Raz",
-    date: "20/07/2022",
+    createdAt: "20/07/2022",
     amount: "$1231.90",
     status: "Pending",
     image:
@@ -41,7 +41,7 @@ export const data:CostumerDataInfo[] = [
   },
   {
     username: "Jack Winbow",
-    date: "19/07/2022",
+    createdAt: "19/07/2022",
     amount: "$79.90",
     status: "Approved",
     image:

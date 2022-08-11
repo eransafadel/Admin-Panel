@@ -1,20 +1,53 @@
 import "./widgetLg.css";
 import {data,CostumerDataInfo} from "./data/data";
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { userRequest } from "../../api/requestMethods";
+import{format} from "timeago.js";
+
+
+export interface BasicUserInfo {
+  username: string;
+  image:string
+
+}
+
+
 
 const WidgetLg = () => {
   const Button: React.FC<{type:string}>=({type}) => {
     return <button className={"widgetLgButton " + type}>{type}</button>;
   };
+
+  const [orders,setOrders] = useState([]);
+  useEffect(()=>{
+    const getOrders = async()=>{
+      try{
+      const resOrders = await userRequest.get("orders");
+      setOrders(resOrders.data);
+    
+      }
+      catch{
+
+      }
+    };
+
+    getOrders();
+
+  },[orders]); 
+
+
+
+
   
-  const items = data.map((n:CostumerDataInfo, index:number) => (
+  const itemsOrders = orders.map((n:CostumerDataInfo, index:number) => (
     <tr key={index} className="widgetLgTr">
+     
       <td className="widgetLgUser">
-        <img src={n.image} alt="avatar image" className="widgetLgImg" />
+        <img src={n.image} alt="" className="widgetLgImg" />
         <span className="widgetLgName">{n.username}</span>
       </td>
-      <td className="widgetLgDate">{n.date}</td>
-      <td className="widgetLgAmount">{n.amount}</td>
+      <td className="widgetLgDate">{format(n.createdAt)}</td>
+      <td className="widgetLgAmount">${n.amount}</td>
       <td className="widgetLgStatus">
         <Button type={n.status} />
       </td>
@@ -32,7 +65,7 @@ const WidgetLg = () => {
           <th className="widgetLgTh">Amount</th>
           <th className="widgetLgTh">Status</th>
         </tr>
-        {items}
+        {itemsOrders}
         </tbody>
       </table>
     </div>

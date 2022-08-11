@@ -22,7 +22,7 @@ const WidgetSm = () => {
 
     getUsers();
 
-  },[users])
+  },[users]);
 
   const items = users.map((n:BasicMemberUserInfo, index:number) => (
     <li key={index} className="widgetSmListTitle">
